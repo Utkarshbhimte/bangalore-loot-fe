@@ -7,7 +7,6 @@ import myEpicNft from "./utils/MyEpicNFT.json";
 // Constants
 const TWITTER_HANDLE = "0xbhaisaab";
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
-const TOTAL_MINT_COUNT = 50;
 const CONTRACT_ADDRESS = process.env.REACT_APP_CONTRACT_ADDRESS;
 
 const { ethereum } = window;
@@ -178,6 +177,7 @@ const App = () => {
                   link:{" "}
                   <a
                     target="_blank"
+                    rel="noreferrer"
                     href={`https://testnets.opensea.io/assets/${CONTRACT_ADDRESS}/${boughtNFT}`}
                   >
                     https://testnets.opensea.io/assets/{CONTRACT_ADDRESS}/
